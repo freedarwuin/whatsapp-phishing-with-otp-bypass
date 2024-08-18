@@ -23,4 +23,4 @@ root ---must !
 4. ./Whatsapp.sh
 
 # Contact For Contribute
-sg5479845@gmail.co
+sg5479845@gmail.com

